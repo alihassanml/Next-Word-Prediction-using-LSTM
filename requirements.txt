@@ -2,4 +2,6 @@ numpy
 pandas
 tensorboard
 scikeras
+tensorflow
+keras
 nltk
