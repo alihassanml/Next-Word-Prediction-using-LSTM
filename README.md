@@ -71,7 +71,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Contact
 
 For any questions or suggestions, feel free to contact me at [alihassanml](https://alihassanml.vercel.app/)
-
-```
-
-Make sure to replace `alihassanml@example.com` with your actual contact information if you want to include it. Save this content as `README.md` in your repository.
