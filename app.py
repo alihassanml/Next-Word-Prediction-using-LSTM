@@ -7,7 +7,6 @@ import pickle
 
 # Title of the application
 st.title("Next Word Prediction With LSTM")
-st.text('Hello')
 
 # Loading the model
 model = load_model('lstm_model.h5')
