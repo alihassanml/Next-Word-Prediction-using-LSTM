@@ -7,6 +7,7 @@ import pickle
 
 # Title of the application
 st.title("Next Word Prediction With LSTM")
+st.caption('This App Desgine to predict the next word in a given text input using an LSTM model')
 
 # Loading the model
 model = load_model('lstm_model.h5')
@@ -33,13 +34,13 @@ max_length = 500
 max_seq = model.input_shape[1] + 1
 
 # Input text from user
-input_text = st.text_input("Enter the text:", "")
+input_text = st.text_input("Enter the text", "")
 
 # Prediction and display
 if st.button("Predict Next Word"):
     if input_text:
         next_word = prediction_model(model, tokenizer, input_text, max_length)
-        st.write(f"Input Text: {input_text}")
-        st.write(f"Next Word Prediction: {next_word}")
+        st.success(f"**Predict:** {next_word}\n\n**Complete:** {input_text} {next_word}")
+
     else:
-        st.write("Please enter some text to predict the next word.")
+        st.error("Please enter some text to predict the next word.")
