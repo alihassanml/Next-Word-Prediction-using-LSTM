@@ -1,0 +1,5 @@
+numpy
+pandas
+tensorboard
+scikeras
+nltk
